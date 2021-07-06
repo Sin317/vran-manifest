@@ -1,7 +1,7 @@
 ---
 # Find the right NIC
 # ls -l /sys/class/net/
-# oc label node supermicrobng7 ran.altiostar.com/ptp=""
+# oc label node supermicrobng7 ran.altiostar.com/ptp="" 
 apiVersion: ptp.openshift.io/v1
 kind: PtpConfig
 metadata:
