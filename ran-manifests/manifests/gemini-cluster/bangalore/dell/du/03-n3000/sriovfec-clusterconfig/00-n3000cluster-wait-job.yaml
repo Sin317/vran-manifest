@@ -22,7 +22,7 @@ spec:
               echo -n "Waiting for the n3000cluster to be created."
               SNP_AVAILABLE=0
               sleep $SLEEP
-              until [ $SNP_AVAILABLE -ge 1 ]
+              until [ $SNP_AVAILABLE -ge 0 ]
               do
                 SNP_AVAILABLE=`oc get n3000cluster -n vran-acceleration-operators | grep -o "n3000" | wc -l`
                 echo -n "Waiting for the n3000cluster to be created."
